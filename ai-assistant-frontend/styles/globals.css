@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --background: #ffffff;
+  --foreground: #000000;
+}
+
+.dark {
+  --background: #1f2937; /* e.g., tailwind gray-800 */
+  --foreground: #ffffff;
+}
+
+.loader {
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3b82f6; /* Tailwind's blue-500 */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Example dark mode override */
+.dark body {
+  background-color: #1f2937; /* Gray-800 */
+}

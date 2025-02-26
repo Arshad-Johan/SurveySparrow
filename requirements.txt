@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+google-auth
+google-auth-oauthlib
+google-api-python-client
+slack_sdk
+twilio
+python-dotenv
+requests
+transformers
+torch
